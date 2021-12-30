@@ -1,16 +1,6 @@
-
-
-
-
-
-
-
-
-
-
 const mongoose=require("mongoose");
 
-const userScheme=new mongoose.Schema({
+const restrautCredentials=new mongoose.Schema({
     username:{
         type:String,
         required:true,
@@ -21,5 +11,5 @@ const userScheme=new mongoose.Schema({
       required:true
     }
 })
-const loginModel=new mongoose.model("userlogin",userScheme)
-module.exports=loginModel;
+const restrauntLoginModel=new mongoose.model("restrauntsCredential",restrautCredentials)
+module.exports=restrauntLoginModel;
