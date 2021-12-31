@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-const url="mongodb+srv://admin123:admin123@zomato.wdcps.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const url="mongodb+srv://admin123:admin123@zomato.wdcps.mongodb.net/zomatoclone?retryWrites=true&w=majority";
 
 mongoose.connect(url,{
     useNewUrlParser:true
