@@ -93,7 +93,7 @@ try {
     exports.USER_UPDATE_PROFILE = async function (req, res) {
 
         let { email, mobile_number, name, user_id } = req.body;
-        if (user_id == "" || uid == undefined) {
+        if (user_id == "" || user_id == undefined) {
             return res.send({
                 code: 500,
                 status: false,
@@ -124,7 +124,7 @@ try {
                 msg: "password is required"
             })
         }
-        let query = { _id=Object(id) }
+        let query = { _id:user_id }
         let newData = { email: email, mobileNumber: mobile_number, name: name };
         userProfile.updateOne(query, newData, (err, result) => {
             if (!err) {
