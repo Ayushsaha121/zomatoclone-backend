@@ -7,6 +7,7 @@ const userRoute=require('./routers/userRoute');
 const storeRoute=require('./routers/storeRoute');
 app.use(express.json())
 app.use("/user",userRoute);
+
 app.listen(port, () => {
   console.log(`app running at http://localhost:${port}`)
 }) 
